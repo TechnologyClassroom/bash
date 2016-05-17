@@ -50,7 +50,7 @@ while true; do
 	then
 	COUNTER=0
 	while [ $COUNTER -lt 5 ]; do
-		feh -FZY 1011and12.png &
+		feh -FZY 8and9.png &
 		sleep 5
 		xdotool key q
 		
@@ -65,7 +65,7 @@ while true; do
 	then
 	COUNTER=0
 	while [ $COUNTER -lt 5 ]; do
-		feh -FZY 8and9.png &
+		feh -FZY 10-18Time.png &
 		sleep 5
 		xdotool key q
 		
@@ -80,7 +80,7 @@ while true; do
 	then
 	COUNTER=0
 	while [ $COUNTER -lt 5 ]; do
-		feh -FZY 8and9Dinner.png &
+		feh -FZY 10-12Dinner.png &
 		sleep 5
 		xdotool key q
 		
@@ -95,7 +95,7 @@ while true; do
 	then
 	COUNTER=0
 	while [ $COUNTER -lt 5 ]; do
-		feh -FZY 8and9.png &
+		feh -FZY 10-18Time.png &
 		sleep 5
 		xdotool key q
 		
