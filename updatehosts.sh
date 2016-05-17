@@ -1,6 +1,6 @@
 # updatehosts.sh
-# This script downloads HOSTS files from github.com/BlueHillBGCB/HOSTS on GNU/Linux, Mac, router & Unix systems.
 # Michael McMahon
+# This script downloads HOSTS files from github.com/BlueHillBGCB/HOSTS on GNU/Linux, Mac, router & Unix systems.
 
 # Download HOSTS files from github.com/BlueHillBGCB/HOSTS
 curl -o /etc/HOSTSFunix.txt https://raw.githubusercontent.com/BlueHillBGCB/HOSTS/master/HOSTSFunix.txt
