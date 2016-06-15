@@ -8,5 +8,9 @@ curl -o /etc/HOSTSMTWRunix.txt https://raw.githubusercontent.com/BlueHillBGCB/HO
 curl -o /etc/HOSTSFunixLS.txt https://raw.githubusercontent.com/BlueHillBGCB/HOSTS/master/HOSTSFunixLS.txt
 curl -o /etc/HOSTSMTWRunixLS.txt https://raw.githubusercontent.com/BlueHillBGCB/HOSTS/master/HOSTSMTWRunixLS.txt
 
-# Copy MTWR file to the Hosts file.
-cp /etc/HOSTSMTWRunix.txt /etc/hosts
+# Copy MTWR file to the hosts file unless today is Friday.  If it is Friday, copy the F file to hosts.
+if [ $(date '+%u') == "5" ];then
+   cp /etc/HOSTSFunix.txt /etc/hosts
+else
+   cp /etc/HOSTSMTWRunix.txt /etc/hosts
+fi
