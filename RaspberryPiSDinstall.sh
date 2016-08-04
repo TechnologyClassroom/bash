@@ -5,7 +5,8 @@
 # Referenced guide on http://cmdann.ca/tutorials/raspberry-pi-tutorials/raspberry-pi-sd-card-setup-mac/
 
 # After running df -h, the SD card is /dev/disk1s1
-# So I'll use /dev/rdisk1 for the dd command
+# Yours may be different.
+# I will use /dev/rdisk1 for the dd command
 
 #sudo diskutil unmount /dev/disk1s1
 su Computer\ Clubhouse -c sudo\ diskutil\ unmount\ /dev/disk1s1
