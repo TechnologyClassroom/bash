@@ -14,5 +14,4 @@ su Computer\ Clubhouse -c sudo\ diskutil\ unmount\ /dev/disk1s1
 su Computer\ Clubhouse -c sudo\ dd\ bs=1m\ if=/Users/bluehill/Downloads/RaspberryPi/Raspbian20160804BAK.img\ of=/dev/rdisk1
 
 #sudo diskutil eject /dev/rdisk1
-#su Computer\ Clubhouse -c sudo\ diskutil\ eject\ /dev/rdisk1
 su Computer\ Clubhouse -c sudo\ diskutil\ eject\ /dev/rdisk1
