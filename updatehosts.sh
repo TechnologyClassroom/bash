@@ -4,6 +4,10 @@
  
 # MUST BE RUN WITH ADMINISTRATOR PRIVILEGES
 
+# To run this at every boot, run this command and add the following line to the cron file:
+# sudo crontab -e
+# @reboot /etc/updatehosts.sh
+
 # Copy a file and append the date.  Then, delete the history.
 cp /Users/bluehill/Library/Application\ Support/Google/Chrome/Default/History /etc/history$(date +%Y%m%d%H%M)  && rm /Users/bluehill/Library/Application\ Support/Google/Chrome/Default/History
 cp /Users/bluehill/Library/Application\ Support/Google/Chrome/Profile\ 1/History /etc/history$(date +%Y%m%d%H%M)  && rm /Users/bluehill/Library/Application\ Support/Google/Chrome/Profile\ 1/History
