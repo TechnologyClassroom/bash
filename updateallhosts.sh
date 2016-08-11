@@ -2,17 +2,22 @@
 # Michael McMahon
 # This will take updates from HOSTSMTWRwin.txt and the top portion of HOSTSFwin.txt to create a new set of HOSTS files.
 
-# Add a variables section to input local server IP and github credentials.
+# Variables
+gitname='Michael McMahon'
+gitmail='INSERTUSERNAME@HERE'
+gitpass='INSERTPASSWORDHERE'
+gitrepo='github.com/BlueHillBGCB/HOSTS.git'
+today=$(date +%Y%m%d)
+localserver='172.16.20.84'
 
 # Download latest HOSTS.git
-git clone http://github.com/BlueHillBGCB/HOSTS.git
+git clone https://$gitrepo
 
 # Change directory
 cd HOSTS
 
 # Fix date
 echo Fixing the date...
-today=$(date +%Y%m%d)
 sed -i -- "s/[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]/$today/g" HOSTSMTWRwin.txt
 sed -i -- "s/[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]/$today/g" HOSTSFwin.txt
 # Syntax from http://unix.stackexchange.com/questions/181283/replace-date-with-current-date
@@ -38,7 +43,7 @@ cp HOSTSFwin.txt HOSTSFwinLS.txt
 # Replace 127.0.0.1 with the local server IP address for all files that end in LS
 # You can replace the 2nd ip address with your own local server IP address
 echo Fixing LS files...
-sed -i -- 's/127.0.0.1/172.16.20.84/g' *LS.txt
+sed -i -- 's/127.0.0.1/$localserver/g' *LS.txt
 # syntax from http://unix.stackexchange.com/questions/112023/how-can-i-replace-a-string-in-a-files
 
 # Fix line endings for everything that contains the string 'unix'
@@ -59,8 +64,8 @@ rm Fhosts.txt
 # echo Adding files to github...
 
 # Clean up folder
-#echo Cleaning up folder...
-#cd ..
-#rm -r HOSTS
+echo Cleaning up folder...
+cd ..
+rm -r HOSTS
 
 echo DONE!
