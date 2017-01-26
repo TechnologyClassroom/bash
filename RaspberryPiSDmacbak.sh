@@ -13,7 +13,7 @@ su Computer\ Clubhouse -c sudo\ diskutil\ unmount\ /dev/disk1s6
 
 # Backup Card
 #sudo dd bs=1m if=~/Downloads/RaspberryPi/Raspbian20160804BAK.img of=/dev/rdisk1
-su Computer\ Clubhouse -c sudo\ dd\ bs=1m\ if=/dev/rdisk1\ of=/Users/bluehill/Downloads/RaspberryPi/Raspbian20160804BAK.img
+su Computer\ Clubhouse -c sudo\ dd\ bs=1m\ if=/dev/rdisk1\ of=/Users/bluehill/Downloads/RaspberryPi/Raspbian$(date +%Y-%m-%d)BAK.img
 
 #sudo diskutil eject /dev/rdisk1
 su Computer\ Clubhouse -c sudo\ diskutil\ eject\ /dev/rdisk1
