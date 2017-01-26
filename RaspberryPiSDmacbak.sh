@@ -1,4 +1,4 @@
-# RaspberryPiSDbak.sh
+# RaspberryPiSDmacbak.sh
 # Michael McMahon
 # Raspberry Pi SD Card Backup for OS X from limited user account
 
