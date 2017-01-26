@@ -1,4 +1,4 @@
-# RaspberryPiSDinstall.sh
+# RaspberryPiSDmacinstall.sh
 # Michael McMahon
 # Raspberry Pi SD Card Install for Mac OS X from limited user account
 
