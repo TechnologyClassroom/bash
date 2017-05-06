@@ -32,7 +32,9 @@ fdisk /dev/sdc && fdisk /dev/sdd && fdisk /dev/sde && fdisk /dev/sdf
 
 
 # Make filesystems
+# In the future, base filesystem choice from other filesystems in use.
 mkfs.xfs /dev/sdc1 && mkfs.xfs /dev/sdd1 && mkfs.xfs /dev/sde1 && mkfs.xfs /dev/sdf1
+#mkfs.ext4 /dev/sdc1 && mkfs.ext4 /dev/sdd1 && mkfs.ext4 /dev/sde1 && mkfs.ext4 /dev/sdf1
 
 
 # Find UUID and configure /etc/fstab
