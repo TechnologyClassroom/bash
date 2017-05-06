@@ -7,6 +7,7 @@ GNU/Linux and UNIX:
   * BlueHillTV.sh - RPi script to display a slideshow and a video.
   * clone7.sh - Use dd to copy two drives to 13 other drives.  The most dangerous script I have ever written.
   * disablescreensaver.sh - RPi script to disable the screen blanking under Raspbian
+  * pfsmount.sh - INCOMPLETE find unpartitioned disks, partition, filesystem, and mount.
   * RaspberryPiSDbak.sh - RPi SD Card Backup for GNU/Linux
   * RaspberryPiSDinstall.sh - RPi SD Card Install for GNU/Linux
   * splitrotation.sh - RPi script to display which age groups are in the room at any different time where Tue and Thur have different schedules
