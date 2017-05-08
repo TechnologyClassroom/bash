@@ -39,9 +39,6 @@ echo "If incorrect, the drives may need to be reflashed."
 
 lsblk
 
-#echo "Press any key to continue..."
-#read
-
 echo Updating system.  This is unnecessary, but it gives the user extra time to shutdown.
 echo Updating repositories twice...
 apt-get update 1>/dev/null
