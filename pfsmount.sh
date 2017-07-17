@@ -40,6 +40,18 @@ mkfs.xfs /dev/sdc1 && mkfs.xfs /dev/sdd1 && mkfs.xfs /dev/sde1 && mkfs.xfs /dev/
 # Find UUID and configure /etc/fstab
 ls -lA /dev/disk/by-uuid/ | sort -k 10 | grep -v -e sdb -e total | awk '{ print "UUID=" $9 " /mnt/data" NR-1 "              xfs     defaults        0 2"}' >> /etc/fstab
 
+# Larger sets of drives will not be in order.
+# sda1
+# sdaa1
+# ...
+# sdaz1
+# sdb1
+# sdba1
+# ...
+# sdbh1
+# sdc1
+# sdd1
+
 # list directory contents
 # -l     use a long listing format
 # -A, --almost-all
