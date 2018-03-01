@@ -6,7 +6,8 @@
 
 # Setup
 # Install feh and xdotool with this command:
-# sudo apt-get update && sudo apt-get install -y feh xdotool# This runs on a Raspberry Pi connected to a monitor attached to my door.
+# sudo apt-get update && sudo apt-get install -y feh xdotool
+# This runs on a Raspberry Pi connected to a monitor attached to my door.
 
 # Set Rules as the background once
 feh -FZY Rules.png &

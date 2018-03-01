@@ -2,7 +2,8 @@
 # Michael McMahon
 # Raspberry Pi SD Card Backup for OS X from limited user account
 
-# Referenced guide on http://cmdann.ca/tutorials/raspberry-pi-tutorials/raspberry-pi-sd-card-setup-mac/
+# Referenced guide on
+# http://cmdann.ca/tutorials/raspberry-pi-tutorials/raspberry-pi-sd-card-setup-mac/
 
 # After running df -h, the SD card is /dev/disk1s1 and /dev/disk1s6.
 # Yours may be different.

@@ -2,11 +2,13 @@
 # Michael McMahon
 # Raspberry Pi SD Card Install for GNU/Linux
 
-# For an easier GUI way to accomplish this same task, use the free and open source program Etcher.
+# For an easier GUI way to accomplish this same task, use the free and open
+# source program Etcher.
 # https://etcher.io/
 # https://github.com/resin-io/etcher
 
-# Referenced guide on http://cmdann.ca/tutorials/raspberry-pi-tutorials/raspberry-pi-sd-card-setup-mac/
+# Referenced guide on
+# http://cmdann.ca/tutorials/raspberry-pi-tutorials/raspberry-pi-sd-card-setup-mac/
 
 # After running df -h, the SD card is /dev/sdc.
 # Yours may be different.
@@ -27,4 +29,4 @@ sudo dd bs=1M if=/mnt/data0/data/iso/arm/raspbian/raspbian20170126BAK.img of=/de
 sudo eject /dev/sdc 2>/dev/null
 sync
 
-echo The SD card can now be removed.
+echo "The SD card can now be removed."

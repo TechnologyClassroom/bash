@@ -1,13 +1,19 @@
+#!/bin/bash
+
 # BlueHillTV.sh
 # Michael McMahon
-# This acts as a digital slideshow for the entrance way.  It rotates between a picture slideshow and videos.
 
+# This acts as a digital slideshow for the entrance way.  It rotates between a
+# picture slideshow and videos.
+
+# Splash image
 feh -FZY ~/BlueHillTV/WelcomeSpring2016/001WelcomeToTheBlueHillClub1080.png &
 
+# Slideshow and movie loop
 while true
 do
-	feh -FZYD 5 --cycle-once ~/BlueHillTV/WelcomeSpring2016/*.png
-	omxplayer -I -o hdmi ~/BlueHillTV/Video/*.mov
+  feh -FZYD 5 --cycle-once ~/BlueHillTV/WelcomeSpring2016/*.png
+  omxplayer -I -o hdmi ~/BlueHillTV/Video/*.mov
 done
 
 # feh switches

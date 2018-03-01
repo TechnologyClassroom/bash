@@ -1,27 +1,42 @@
 # updatehosts.sh
 # Michael McMahon
-# This script downloads HOSTS files from github.com/BlueHillBGCB/HOSTS on GNU/Linux, Mac, and Unix systems.
+# This script downloads HOSTS files from github.com/BlueHillBGCB/HOSTS on
+# GNU/Linux, Mac, and Unix systems.
  
 # MUST BE RUN WITH ADMINISTRATOR PRIVILEGES
 
-# To run this at every boot, run this command and add the following line to the cron file:
-# sudo crontab -e
-# @reboot /etc/updatehosts.sh
+# To run this at every boot, run this command and add the following line to the
+# cron file:
+#   sudo crontab -e
+#   @reboot /etc/updatehosts.sh
 
 # Copy a file and append the date.  Then, delete the history.
-cp /Users/bluehill/Library/Application\ Support/Google/Chrome/Default/History /etc/history$(date +%Y%m%d%H%M)  && rm /Users/bluehill/Library/Application\ Support/Google/Chrome/Default/History
-cp /Users/bluehill/Library/Application\ Support/Google/Chrome/Profile\ 1/History /etc/history$(date +%Y%m%d%H%M)  && rm /Users/bluehill/Library/Application\ Support/Google/Chrome/Profile\ 1/History
-cp /Users/bluehill/Library/Application\ Support/Google/Chrome/Profile\ 2/History /etc/history$(date +%Y%m%d%H%M)  && rm /Users/bluehill/Library/Application\ Support/Google/Chrome/Profile\ 2/History
-cp /Users/bluehill/Library/Application\ Support/Google/Chrome/Profile\ 3/History /etc/history$(date +%Y%m%d%H%M)  && rm /Users/bluehill/Library/Application\ Support/Google/Chrome/Profile\ 3/History
-cp /Users/bluehill/Library/Application\ Support/Google/Chrome/Profile\ 4/History /etc/history$(date +%Y%m%d%H%M)  && rm /Users/bluehill/Library/Application\ Support/Google/Chrome/Profile\ 4/History
-cp /Users/bluehill/Library/Application\ Support/Google/Chrome/Profile\ 5/History /etc/history$(date +%Y%m%d%H%M)  && rm /Users/bluehill/Library/Application\ Support/Google/Chrome/Profile\ 5/History
-cp /Users/bluehill/Library/Application\ Support/Google/Chrome/Profile\ 6/History /etc/history$(date +%Y%m%d%H%M)  && rm /Users/bluehill/Library/Application\ Support/Google/Chrome/Profile\ 6/History
-cp /Users/bluehill/Library/Application\ Support/Google/Chrome/Profile\ 7/History /etc/history$(date +%Y%m%d%H%M)  && rm /Users/bluehill/Library/Application\ Support/Google/Chrome/Profile\ 7/History
-cp /Users/bluehill/Library/Application\ Support/Google/Chrome/Profile\ 8/History /etc/history$(date +%Y%m%d%H%M)  && rm /Users/bluehill/Library/Application\ Support/Google/Chrome/Profile\ 8/History
-cp /Users/bluehill/Library/Application\ Support/Google/Chrome/Profile\ 9/History /etc/history$(date +%Y%m%d%H%M)  && rm /Users/bluehill/Library/Application\ Support/Google/Chrome/Profile\ 9/History
-cp /Users/bluehill/Library/Application\ Support/Google/Chrome/Profile\ 10/History /etc/history$(date +%Y%m%d%H%M)  && rm /Users/bluehill/Library/Application\ Support/Google/Chrome/Profile\ 10/History
-cp /Users/bluehill/Library/Application\ Support/Google/Chrome/Profile\ 11/History /etc/history$(date +%Y%m%d%H%M)  && rm /Users/bluehill/Library/Application\ Support/Google/Chrome/Profile\ 11/History
-cp /Users/bluehill/Library/Application\ Support/Google/Chrome/Profile\ 12/History /etc/history$(date +%Y%m%d%H%M)  && rm /Users/bluehill/Library/Application\ Support/Google/Chrome/Profile\ 12/History
+cp /Users/bluehill/Library/Application\ Support/Google/Chrome/Default/History /etc/history$(date +%Y%m%d%H%M)
+/Users/bluehill/Library/Application\ Support/Google/Chrome/Default/History
+cp /Users/bluehill/Library/Application\ Support/Google/Chrome/Profile\ 1/History /etc/history$(date +%Y%m%d%H%M)
+rm /Users/bluehill/Library/Application\ Support/Google/Chrome/Profile\ 1/History
+cp /Users/bluehill/Library/Application\ Support/Google/Chrome/Profile\ 2/History /etc/history$(date +%Y%m%d%H%M)
+rm /Users/bluehill/Library/Application\ Support/Google/Chrome/Profile\ 2/History
+cp /Users/bluehill/Library/Application\ Support/Google/Chrome/Profile\ 3/History /etc/history$(date +%Y%m%d%H%M)
+rm /Users/bluehill/Library/Application\ Support/Google/Chrome/Profile\ 3/History
+cp /Users/bluehill/Library/Application\ Support/Google/Chrome/Profile\ 4/History /etc/history$(date +%Y%m%d%H%M)
+rm /Users/bluehill/Library/Application\ Support/Google/Chrome/Profile\ 4/History
+cp /Users/bluehill/Library/Application\ Support/Google/Chrome/Profile\ 5/History /etc/history$(date +%Y%m%d%H%M)
+rm /Users/bluehill/Library/Application\ Support/Google/Chrome/Profile\ 5/History
+cp /Users/bluehill/Library/Application\ Support/Google/Chrome/Profile\ 6/History /etc/history$(date +%Y%m%d%H%M)
+rm /Users/bluehill/Library/Application\ Support/Google/Chrome/Profile\ 6/History
+cp /Users/bluehill/Library/Application\ Support/Google/Chrome/Profile\ 7/History /etc/history$(date +%Y%m%d%H%M)
+rm /Users/bluehill/Library/Application\ Support/Google/Chrome/Profile\ 7/History
+cp /Users/bluehill/Library/Application\ Support/Google/Chrome/Profile\ 8/History /etc/history$(date +%Y%m%d%H%M)
+rm /Users/bluehill/Library/Application\ Support/Google/Chrome/Profile\ 8/History
+cp /Users/bluehill/Library/Application\ Support/Google/Chrome/Profile\ 9/History /etc/history$(date +%Y%m%d%H%M)
+rm /Users/bluehill/Library/Application\ Support/Google/Chrome/Profile\ 9/History
+cp /Users/bluehill/Library/Application\ Support/Google/Chrome/Profile\ 10/History /etc/history$(date +%Y%m%d%H%M)
+rm /Users/bluehill/Library/Application\ Support/Google/Chrome/Profile\ 10/History
+cp /Users/bluehill/Library/Application\ Support/Google/Chrome/Profile\ 11/History /etc/history$(date +%Y%m%d%H%M)
+rm /Users/bluehill/Library/Application\ Support/Google/Chrome/Profile\ 11/History
+cp /Users/bluehill/Library/Application\ Support/Google/Chrome/Profile\ 12/History /etc/history$(date +%Y%m%d%H%M)
+rm /Users/bluehill/Library/Application\ Support/Google/Chrome/Profile\ 12/History
 
 # Delete Chrome history and cache
 rm -f /Users/bluehill/Library/Application\ Support/Google/Chrome/Default/Cookies

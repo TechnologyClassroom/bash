@@ -3,15 +3,15 @@
 # Partion, Filesystem, Mount
 #
 # INCOMPLETE
-# This script aims to find unpartitioned disks, partition those disks, make filesystems for those discs, find UUID, and configure the result in /etc/fstab.
-
+# This script aims to find unpartitioned disks, partition those disks, make
+# filesystems for those discs, find UUID, and configure the result in
+# /etc/fstab.
 
 # Check for root.
 if [[ $EUID -ne 0 ]]; then
 	echo "This script must be run as root" 
 	exit 1
 fi
-
 
 # Find unpartitioned disks
 
@@ -33,8 +33,10 @@ fdisk /dev/sdc && fdisk /dev/sdd && fdisk /dev/sde && fdisk /dev/sdf
 
 # Make filesystems
 # In the future, base filesystem choice from other filesystems in use.
-mkfs.xfs /dev/sdc1 && mkfs.xfs /dev/sdd1 && mkfs.xfs /dev/sde1 && mkfs.xfs /dev/sdf1
-#mkfs.ext4 /dev/sdc1 && mkfs.ext4 /dev/sdd1 && mkfs.ext4 /dev/sde1 && mkfs.ext4 /dev/sdf1
+mkfs.xfs /dev/sdc1 && mkfs.xfs /dev/sdd1 && mkfs.xfs /dev/sde1
+mkfs.xfs /dev/sdf1
+# mkfs.ext4 /dev/sdc1 && mkfs.ext4 /dev/sdd1 && mkfs.ext4 /dev/sde1
+# mkfs.ext4 /dev/sdf1
 
 
 # Find UUID and configure /etc/fstab
@@ -61,15 +63,19 @@ ls -lA /dev/disk/by-uuid/ | sort -k 10 | grep -v -e sdb -e total | awk '{ print 
 #
 # sort - sort lines of text files
 # -k, --key=POS1[,POS2]
-#        start a key at POS1 (origin 1), end it at POS2 (default end of line).  See POS syntax below
+#        start a key at POS1 (origin 1), end it at POS2 (default end of line).
+#        See POS syntax below
 #
 # grep - print lines matching a pattern
 # -v, --invert-match
-#        Invert the sense of matching, to select non-matching lines.  (-v is specified by POSIX.)
+#        Invert the sense of matching, to select non-matching lines.
+#        (-v is specified by POSIX.)
 # 	Matching Control
 #	    -e PATTERN, --regexp=PATTERN
-# 	           Use PATTERN as the pattern.  This can be used to specify multiple search patterns, or to protect a
-# 	           pattern beginning with a hyphen (-).  (-e is specified by POSIX.)
+# 	           Use PATTERN as the pattern.  This can be used to specify
+#                  multiple search patterns, or to protect a
+# 	           pattern beginning with a hyphen (-).
+#                  (-e is specified by POSIX.)
 #
 # awk - pattern scanning and processing language
 # 	print string "UUID="

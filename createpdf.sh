@@ -7,4 +7,5 @@
 
 convert -strip -interlace Plane -gaussian-blur 0.05 -quality 85% p*.jpg -compress jpeg out3.pdf
 
-# based on Yves M. and Felipe Buccioni from https://stackoverflow.com/questions/7261855/recommendation-for-compressing-jpg-files-with-imagemagick
+# based on Yves M. and Felipe Buccioni from
+# https://stackoverflow.com/questions/7261855
