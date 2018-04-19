@@ -28,7 +28,7 @@ echo "Disabling puppet service..."
 systemctl disable puppet.service
 
 echo "Configuring awesome WM..."
-echo "exec awesome" > /home/*/.xinitrc
+echo "exec awesome" > /home/$SUDO_USER/.xinitrc
 
 echo "Downloading hosts file..."
 wget https://raw.githubusercontent.com/TechnologyClassroom/HOSTS/master/HOSTSFunix.txt
