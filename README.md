@@ -9,6 +9,7 @@ GNU/Linux and UNIX:
 
 - blinkgen.sh - Blink drive LED lights with Debian based systems.
 - BlueHillTV.sh - RPi script to display a slideshow and a video.
+- buildnetudevrules.sh - Generates /etc/udev/rules.d/70-persistent-net.rules
 - clone7.sh - Use dd to copy two drives to 13 other drives.  The most dangerous
   script I have ever written.
 - createpdf.sh - Creates a pdf from p01.jpg, p02.jpg, ..., pN.jpg files.
