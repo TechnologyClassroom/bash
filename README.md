@@ -36,7 +36,7 @@ GNU/Linux and UNIX:
 - workstationsetup.sh - Configures a hosts file, software, and AwesomeWM for a
   new Ubuntu install.
 
-Mac:
+apple:
 - elcapitan2usb.sh - Mac OS X script to create a USB of El Capitan (Does not
   exist elsewhere on the Internet)
 - mavericks2usb.sh - Mac OS X script to create a USB of Mavericks
