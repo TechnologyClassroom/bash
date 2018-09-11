@@ -15,6 +15,7 @@ GNU/Linux and UNIX:
 - createpdf.sh - Creates a pdf from p01.jpg, p02.jpg, ..., pN.jpg files.
 - disablescreensaver.sh - RPi script to disable the screen blanking under
   Raspbian.
+- nginxcentos7.sh - Compile the nginx with OpenSSL 1.1.1.
 - pfsmount.sh - INCOMPLETE find unpartitioned disks, partition, filesystem, and
   mount.
 - RaspberryPiSDbak.sh - RPi SD Card Backup for GNU/Linux.
