@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# kiwixdesktopcompile.sh
+# kiwixdesktopflatpakcompile.sh
 # version 0.6
 # Compile dependencies for kixix desktop for Triquel 8.
 # Michael McMahon
@@ -10,12 +10,12 @@
 
 # To run this script, boot Triquel 8 and follow these steps:
 # Open a terminal and run this script with:
-# sudo bash kiwixdesktopcompile.sh
+# sudo bash kiwixdesktopflatpakcompile.sh
 # OR
-# sudo /bin/bash kiwixdesktopcompile.sh
+# sudo /bin/bash kiwixdesktopflatpakcompile.sh
 # OR
-# sudo chmod 755 kiwixdesktopcompile.sh
-# sudo ./kiwixdesktopcompile.sh
+# sudo chmod 755 kiwixdesktopflatpakcompile.sh
+# sudo ./kiwixdesktopflatpakcompile.sh
 
 
 
@@ -65,6 +65,11 @@ sudo apt install -y flex
 sudo apt install -y bison
 sudo apt install -y gperf
 
+sudo add-apt-repository ppa:alexlarsson/flatpak
+sudo apt update
+sudo apt install -y flatpak
+sudo apt install -y flatpak-builder
+
 echo "Installing optional dependency for ninja..."
 sudo apt install -y re2c
 
@@ -105,8 +110,5 @@ pip install .
 echo "Refreshing bash paths..."
 hash -r
 
-# echo "Building kiwix-lib and dependencies..."
-# kiwix-build --target-platform native_static kiwix-lib
-
 echo "Building kiwix-desktop and dependencies..."
-kiwix-build --target-platform native_static --make-release kiwix-desktop
+kiwix-build --target-platform flatpak --make-release kiwix-desktop
