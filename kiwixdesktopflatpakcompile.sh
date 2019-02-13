@@ -10,12 +10,12 @@
 
 # To run this script, boot Triquel 8 and follow these steps:
 # Open a terminal and run this script with:
-# sudo bash kiwixdesktopflatpakcompile.sh
+# bash kiwixdesktopflatpakcompile.sh
 # OR
-# sudo /bin/bash kiwixdesktopflatpakcompile.sh
+# /bin/bash kiwixdesktopflatpakcompile.sh
 # OR
-# sudo chmod 755 kiwixdesktopflatpakcompile.sh
-# sudo ./kiwixdesktopflatpakcompile.sh
+# chmod 755 kiwixdesktopflatpakcompile.sh
+# ./kiwixdesktopflatpakcompile.sh
 
 
 

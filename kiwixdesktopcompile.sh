@@ -10,12 +10,12 @@
 
 # To run this script, boot Triquel 8 and follow these steps:
 # Open a terminal and run this script with:
-# sudo bash kiwixdesktopcompile.sh
+# bash kiwixdesktopcompile.sh
 # OR
-# sudo /bin/bash kiwixdesktopcompile.sh
+# /bin/bash kiwixdesktopcompile.sh
 # OR
-# sudo chmod 755 kiwixdesktopcompile.sh
-# sudo ./kiwixdesktopcompile.sh
+# chmod 755 kiwixdesktopcompile.sh
+# ./kiwixdesktopcompile.sh
 
 
 
