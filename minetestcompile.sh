@@ -6,12 +6,14 @@
 sudo apt update
 sudo apt install -y g++ build-essential make libc6-dev cmake libpng-dev libjpeg-dev libxxf86vm-dev libgl1-mesa-dev libsqlite3-dev libogg-dev libvorbis-dev libopenal-dev libcurl4-gnutls-dev libfreetype6-dev zlib1g-dev libgmp-dev libjsoncpp-dev unzip
 
-sudo apt install -y git build-essential libirrlicht-dev libgettextpo0 libfreetype6-dev cmake libbz2-dev libpng12-dev libxxf86vm-dev libgl1-mesa-dev libsqlite3-dev libogg-dev libvorbis-dev libopenal-dev libcurl4-openssl-dev libluajit-5.1-dev liblua5.1-0-dev libleveldb-dev unzip
+sudo apt install -y git libirrlicht-dev libgettextpo0 libfreetype6-dev cmake libbz2-dev libxxf86vm-dev libcurl4-openssl-dev libluajit-5.1-dev liblua5.1-0-dev libleveldb-dev
 
 # Trisquel 8 does not have libjpeg62-turbo-dev. Installing libjpeg-turbo8-dev instead.
 # TODO if trisquel 8 do turbo8.  If trisquel 9 do jpeg62-turbo.
 sudo apt install -y libjpeg-turbo8-dev 2>/dev/null
 sudo apt install -y libjpeg62-turbo-dev 2>/dev/null
+
+# Removed libpng12-dev in favor of libpng-dev.
 
 cd $HOME
 
