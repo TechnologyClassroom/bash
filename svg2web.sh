@@ -4,7 +4,7 @@
 # Michael McMahon 2022
 # Convert all SVG files recursively to PNG and WebP with multiple resolutions for modern web development.
 
-# Depends on BASH, sed, Inkscape 1.2, and cwebp.
+# Depends on Inkscape 1.2, and cwebp, BASH, sed, and echo.
 #   sudo apt install -y inkscape webp
 
 convertsvgforweb() {
@@ -12,11 +12,11 @@ convertsvgforweb() {
   inkscape -C $1 -o "${1%.svg}.png"
   cwebp -progress -lossless -m 6 -z 9 -q 100 "${1%.svg}.png" -o "${1%.svg}.webp"
 
-  # Generate default 192 dpi (2x).
+  # Generate 192 dpi (2x).
   inkscape -C $1 -d 192 -o "${1%.svg}-2x.png"
   cwebp -progress -lossless -m 6 -z 9 -q 100 "${1%.svg}-2x.png" -o "${1%.svg}-2x.webp"
 
-  # Generate default 288 dpi (3x).
+  # Generate 288 dpi (3x).
   inkscape -C $1 -d 288 -o "${1%.svg}-3x.png"
   cwebp -progress -lossless -m 6 -z 9 -q 100 "${1%.svg}-3x.png" -o "${1%.svg}-3x.webp"
 
