@@ -25,6 +25,7 @@ GNU/Linux and UNIX:
   any different time where Tue and Thur have different schedules
 - summerrotation.sh - RPi script to display which age groups are in the room at
   any different time where Tue and Thur have unique schedules.
+- svg2web.sh - Convert SVG files to PNG and WebP for web development.
 - tmux4.sh - Start tmux with multiple screen splits.
 - updateallhosts.sh - GNU/Linux script to build each variation from
   github.com/BlueHillBGCB/HOSTS
