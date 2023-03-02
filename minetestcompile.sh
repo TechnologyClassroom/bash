@@ -19,6 +19,9 @@ git clone https://github.com/minetest/minetest_game.git games/minetest_game
 
 # Modify mods
 
+# Rename killme to spawn
+sed -i 's/killme/spawn/g' games/minetest_game/mods/game_commands/init.lua
+
 # Add WorldEdit
 git clone https://github.com/Uberi/MineTest-WorldEdit/ games/minetest_game/mods/WorldEdit
 # The gui does not work for all inventory systems.
