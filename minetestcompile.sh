@@ -73,7 +73,10 @@ cmake . -DRUN_IN_PLACE=FALSE -DBUILD_CLIENT=1 -DBUILD_SERVER=1
 make -j$(nproc)
 
 # Install Minetest (Optional)
-# sudo make install
+sudo make install
 
 # Run Minetest
 ./bin/minetest
+
+# Start server (optional
+# sudo /usr/local/bin/minetestserver --config /usr/local/share/minetest/games/minetest_game/minetest.conf --gameid minetest_game --worldname world --logfile /var/log/minetest/minetest.log
