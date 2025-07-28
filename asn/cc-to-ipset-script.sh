@@ -38,7 +38,7 @@
 today=$(date +%Y%m%d)
 
 # Where is the file with the country code list?
-asnlistfile="cc-list-to-ipset.txt"
+asnlistfile="cc-to-ipset-script.txt"
 
 echo -e "Building ipset scripts...\n"
 
