@@ -31,7 +31,7 @@ apiport=80
 today=$(date +%Y%m%d)
 
 # Where is the file with IP addresses?
-iplistfile="asnrun-iptables.txt"
+iplistfile="ip-to-asn-iptables.txt"
 
 echo -e "Rules for iptables that can be applied to a server to block these addresses if necessary.\n"
 
