@@ -31,7 +31,7 @@ apiport=80
 today=$(date +%Y%m%d)
 
 # Where is the file with IP addresses?
-iplistfile="asnrun-shorewall.txt"
+iplistfile="ip-to-asn-shorewall.txt"
 
 echo -e "Commands for shorewall that can be run on a server to block these addresses if necessary.\n"
 
